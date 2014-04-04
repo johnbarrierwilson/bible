@@ -10,29 +10,62 @@ body
   color: $c-text
   font-family: $bodyFont
   font-size: $baseFontSize
-  line-height: 1.618
+  line-height: $goldenRatio
 
 p
-  margin: 0
+  margin: 0 0 ($goldenRatio * 1em) 0 // multiply to add the "em"
   padding: 0
   text-align: justify
-  text-indent: 1.618em
+  text-indent: 2em
 
 sup
   color: $c-accent
   font-weight: bold
 
-h1, h2, h3
-  font-family: $headingFont
-  font-weight: 400
+h1, h2, h3, h4, h5, h6
   margin: 0
   padding: 0
 
-h4, h5, h5
+h1
+  font-family: $headingFont
+  font-weight: 400
+
+h2
   color: $c-accent
   font-family: $bodyFont
+  font-size: 0.8em
   font-weight: 700
   letter-spacing: 0.08em
-  margin: 0
-  padding: 0
+  position: relative
   text-transform: uppercase
+  &:after
+    background: $c-border
+    content: ''
+    height: 2px
+    left: 8em
+    position: absolute
+    right: 0
+    top: 0.7em
+
+h3
+  color: lighten($c-text,25%)
+  font-family: $headingFont
+  font-size: 1em
+  font-style: italic
+  font-weight: 400
+  margin-bottom: $goldenRatio * 1em
+
+article
+  margin-top: 4em
+
+section
+  @extend .group
+  +columns(2,2.65em)
+  border-bottom: 2px solid $c-border
+  margin-bottom: 4.5em
+  padding-bottom: 3em
+
+sup
+  font-size: 0.6em
+  margin-right: 0.2em
+  top: -0.4em
