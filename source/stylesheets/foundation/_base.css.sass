@@ -10,10 +10,11 @@ body
   color: $c-text
   font-family: $bodyFont
   font-size: $baseFontSize
-  line-height: $goldenRatio
+  line-height: $baseLineHeight
+  -webkit-font-smoothing: antialiased
 
 p
-  margin: 0 0 ($goldenRatio * 1em) 0 // multiply to add the "em"
+  margin: 0 0 ($baseLineHeight * 1em) 0 // multiply to add the "em"
   padding: 0
   text-align: justify
   text-indent: 2em
@@ -53,17 +54,15 @@ h3
   font-size: 1em
   font-style: italic
   font-weight: 400
-  margin-bottom: $goldenRatio * 1em
+  margin-bottom: $baseLineHeight * 1em
 
 article
-  margin-top: 4em
+  margin-top: 5em
 
 section
   @extend .group
-  +columns(2,2.65em)
-  border-bottom: 2px solid $c-border
-  margin-bottom: 4.5em
-  padding-bottom: 3em
+  +columns(2,1em)
+  margin-bottom: 4em
 
 sup
   font-size: 0.6em
