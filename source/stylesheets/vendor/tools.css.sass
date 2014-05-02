@@ -1,0 +1,215 @@
+.clearfix:after
+  display: block
+  visibility: hidden
+  clear: both
+  height: 0
+  content: " "
+  font-size: 0
+
+%medium-toolbar-arrow
+  position: absolute
+  left: 50%
+  display: block
+  margin-left: -8px
+  width: 0
+  height: 0
+  border-style: solid
+  content: ""
+
+.medium-toolbar-arrow-under:after
+  @extend %medium-toolbar-arrow
+  border-width: 8px 8px 0 8px
+
+.medium-toolbar-arrow-over:before
+  @extend %medium-toolbar-arrow
+  top: -8px
+  border-width: 0 8px 8px 8px
+
+.medium-editor-toolbar, .medium-editor-anchor-preview
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 2000
+  visibility: hidden
+  font-size: 16px
+  font-family: $bodyFont
+  ul
+    margin: 0
+    padding: 0
+  li
+    float: left
+    margin: 0
+    padding: 0
+    list-style: none
+    button
+      display: block
+      margin: 0
+      padding: 15px
+      cursor: pointer
+      font-size: 14px
+      line-height: 1.33
+      text-decoration: none
+      box-sizing: border-box
+    .medium-editor-action-underline
+      text-decoration: underline
+    .medium-editor-action-pre
+      padding: 15px 0
+      font-weight: 100
+      font-size: 12px
+      font-family: 'Menlo', monospace
+
+.medium-editor-anchor-preview
+  i
+    display: inline-block
+    margin: 5px 5px 5px 10px
+    text-decoration: underline
+    font-style: normal
+    cursor: pointer
+
+.medium-editor-toolbar-active, .medium-editor-anchor-preview-active
+  visibility: visible
+  -webkit-animation: pop-upwards 160ms forwards linear
+  animation: pop-upwards 160ms forwards linear
+  transition: top .075s ease-out, left .075s ease-out
+
+.medium-editor-action-bold
+  font-weight: bolder
+
+.medium-editor-action-italic
+  font-style: italic
+
+.medium-editor-toolbar-form-anchor
+  display: none
+  input, a
+    font-family: $bodyFont
+  input
+    margin: 0
+    padding: 6px
+    width: 316px
+    border: none
+    font-size: 14px
+    box-sizing: border-box
+    &:focus
+      outline: 0
+      border: none
+      box-shadow: none
+      -webkit-appearance: none
+      -moz-appearance: none
+  a
+    display: inline-block
+    margin: 0 10px
+    text-decoration: none
+    font-weight: bolder
+    font-size: 24px
+
+.medium-editor-placeholder
+  position: relative
+  &:after
+    position: absolute
+    top: 0
+    left: 0
+    content: attr(data-placeholder)
+    font-style: italic
+
+$medium_editor_bgcolor:       #a95041
+$medium_editor_border_color:  #fff
+$medium_editor_button_size:   60px
+$medium_editor_link_color:    #fff
+
+.medium-toolbar-arrow-under:after
+  top: $medium_editor_button_size
+  border-color: $medium_editor_bgcolor transparent transparent transparent
+
+.medium-toolbar-arrow-over:before
+  top: -8px
+  border-color: transparent transparent $medium_editor_bgcolor transparent
+
+.medium-editor-toolbar
+  background-color: $medium_editor_bgcolor
+  li
+    padding: 0
+    button
+      min-width: $medium_editor_button_size
+      height: $medium_editor_button_size
+      border: none
+      border-right: 1px solid lighten($medium_editor_bgcolor, 20)
+      background-color: transparent
+      color: $medium_editor_link_color
+      transition: background-color .2s ease-in, color .2s ease-in
+      &:hover
+        background-color: darken($medium_editor_bgcolor, 20)
+        color: #fff
+    .medium-editor-button-active
+      background-color: darken($medium_editor_bgcolor, 30)
+      color: #fff
+    .medium-editor-button-last
+      border-right: none
+
+.medium-editor-toolbar-form-anchor
+  input
+    height: $medium_editor_button_size
+    background: $medium_editor_bgcolor
+    color: $medium_editor_link_color
+    &::-webkit-input-placeholder
+      color: #fff
+      color: rgba(#fff, .8)
+    &:-moz-placeholder
+      color: #fff
+      color: rgba(#fff, .8)
+    &::-moz-placeholder
+      color: #fff
+      color: rgba(#fff, .8)
+    &:-ms-input-placeholder
+      color: #fff
+      color: rgba(#fff, .8)
+  a
+    color: $medium_editor_link_color
+
+.medium-editor-toolbar-anchor-preview
+  background: $medium_editor_bgcolor
+  color: $medium_editor_link_color
+
+.medium-editor-placeholder:after
+  color: $medium_editor_border_color
+
+@-webkit-keyframes pop-upwards
+  0%
+    transform: matrix(0.97,0,0,1,0,12)
+    opacity: 0
+
+  20%
+    transform: matrix(0.99,0,0,1,0,2)
+    opacity: .7
+
+  40%
+    transform: matrix(1,0,0,1,0,-1)
+    opacity: 1
+
+  70%
+    transform: matrix(1,0,0,1,0,0)
+    opacity: 1
+
+  100%
+    transform: matrix(1,0,0,1,0,0)
+    opacity: 1
+
+@keyframes pop-upwards
+  0%
+    transform: matrix(0.97,0,0,1,0,12)
+    opacity: 0
+
+  20%
+    transform: matrix(0.99,0,0,1,0,2)
+    opacity: .7
+
+  40%
+    transform: matrix(1,0,0,1,0,-1)
+    opacity: 1
+
+  70%
+    transform: matrix(1,0,0,1,0,0)
+    opacity: 1
+
+  100%
+    transform: matrix(1,0,0,1,0,0)
+    opacity: 1

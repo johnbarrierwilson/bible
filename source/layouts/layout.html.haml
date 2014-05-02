@@ -4,7 +4,7 @@
     %meta{ :charset => 'utf-8' }
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
     %title ESV Bible | formatted by John Wilson
-    
+
     = stylesheet_link_tag 'application'
 
     / Typekit
@@ -12,5 +12,8 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
   %body
-    .grid-wrap--full
-      = yield
+    = yield
+
+    = javascript_include_tag 'tools'
+
+    <script>var editor = new MediumEditor('.editable', {disableEditing: true});</script>

@@ -17,7 +17,6 @@ p
   margin: 0.1em 0 ($baseLineHeight * 1em) 0 // multiply to add the "em"
   padding: 0
   text-align: justify
-  text-indent: 2em
 
 sup
   color: $c-accent
@@ -39,14 +38,6 @@ h2
   letter-spacing: 0.08em
   position: relative
   text-transform: uppercase
-  &:after
-    background: $c-border
-    content: ''
-    height: 2px
-    left: 8em
-    position: absolute
-    right: 0
-    top: 0.7em
 
 h3
   color: lighten($c-text,25%)
@@ -60,8 +51,6 @@ article
   margin-top: 5em
 
 section
-  @extend .group
-  +columns(2,1em)
   margin-bottom: 4em
 
 sup
