@@ -1,0 +1,227 @@
+/* line 1, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  content: " ";
+  font-size: 0; }
+
+/* line 9, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-toolbar-arrow-under:after, .medium-toolbar-arrow-over:before {
+  position: absolute;
+  left: 50%;
+  display: block;
+  margin-left: -8px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  content: ""; }
+
+/* line 19, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-toolbar-arrow-under:after {
+  border-width: 8px 8px 0 8px; }
+
+/* line 23, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-toolbar-arrow-over:before {
+  top: -8px;
+  border-width: 0 8px 8px 8px; }
+
+/* line 28, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-editor-toolbar, .medium-editor-anchor-preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  visibility: hidden;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  /* line 36, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  .medium-editor-toolbar ul, .medium-editor-anchor-preview ul {
+    margin: 0;
+    padding: 0; }
+  /* line 39, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  .medium-editor-toolbar li, .medium-editor-anchor-preview li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    /* line 44, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+    .medium-editor-toolbar li button, .medium-editor-anchor-preview li button {
+      display: block;
+      margin: 0;
+      padding: 15px;
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 1.33;
+      text-decoration: none;
+      box-sizing: border-box; }
+    /* line 53, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+    .medium-editor-toolbar li .medium-editor-action-underline, .medium-editor-anchor-preview li .medium-editor-action-underline {
+      text-decoration: underline; }
+    /* line 55, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+    .medium-editor-toolbar li .medium-editor-action-pre, .medium-editor-anchor-preview li .medium-editor-action-pre {
+      padding: 15px 0;
+      font-weight: 100;
+      font-size: 12px;
+      font-family: "Menlo", monospace; }
+
+/* line 62, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-editor-anchor-preview i {
+  display: inline-block;
+  margin: 5px 5px 5px 10px;
+  text-decoration: underline;
+  font-style: normal;
+  cursor: pointer; }
+
+/* line 69, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-editor-toolbar-active, .medium-editor-anchor-preview-active {
+  visibility: visible;
+  -webkit-animation: pop-upwards 160ms forwards linear;
+  animation: pop-upwards 160ms forwards linear;
+  transition: top 0.075s ease-out, left 0.075s ease-out; }
+
+/* line 75, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-editor-action-bold {
+  font-weight: bolder; }
+
+/* line 78, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-editor-action-italic {
+  font-style: italic; }
+
+/* line 81, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-editor-toolbar-form-anchor {
+  display: none; }
+  /* line 83, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  .medium-editor-toolbar-form-anchor input, .medium-editor-toolbar-form-anchor a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  /* line 85, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  .medium-editor-toolbar-form-anchor input {
+    margin: 0;
+    padding: 6px;
+    width: 316px;
+    border: none;
+    font-size: 14px;
+    box-sizing: border-box; }
+    /* line 92, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+    .medium-editor-toolbar-form-anchor input:focus {
+      outline: 0;
+      border: none;
+      box-shadow: none;
+      -webkit-appearance: none;
+      -moz-appearance: none; }
+  /* line 98, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  .medium-editor-toolbar-form-anchor a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 24px; }
+
+/* line 105, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-editor-placeholder {
+  position: relative; }
+  /* line 107, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  .medium-editor-placeholder:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: attr(data-placeholder);
+    font-style: italic; }
+
+/* line 119, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-toolbar-arrow-under:after {
+  top: 60px;
+  border-color: #a95041 transparent transparent transparent; }
+
+/* line 123, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-toolbar-arrow-over:before {
+  top: -8px;
+  border-color: transparent transparent #a95041 transparent; }
+
+/* line 127, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-editor-toolbar {
+  background-color: #a95041; }
+  /* line 129, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  .medium-editor-toolbar li {
+    padding: 0; }
+    /* line 131, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+    .medium-editor-toolbar li button {
+      min-width: 60px;
+      height: 60px;
+      border: none;
+      border-right: 1px solid #cf8c81;
+      background-color: transparent;
+      color: white;
+      transition: background-color 0.2s ease-in, color 0.2s ease-in; }
+      /* line 139, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+      .medium-editor-toolbar li button:hover {
+        background-color: #5f2d25;
+        color: white; }
+    /* line 142, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+    .medium-editor-toolbar li .medium-editor-button-active {
+      background-color: #3b1c16;
+      color: white; }
+    /* line 145, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+    .medium-editor-toolbar li .medium-editor-button-last {
+      border-right: none; }
+
+/* line 149, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-editor-toolbar-form-anchor input {
+  height: 60px;
+  background: #a95041;
+  color: white; }
+  /* line 153, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  .medium-editor-toolbar-form-anchor input::-webkit-input-placeholder {
+    color: white;
+    color: rgba(255, 255, 255, 0.8); }
+  /* line 156, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  .medium-editor-toolbar-form-anchor input:-moz-placeholder {
+    color: white;
+    color: rgba(255, 255, 255, 0.8); }
+  /* line 159, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  .medium-editor-toolbar-form-anchor input::-moz-placeholder {
+    color: white;
+    color: rgba(255, 255, 255, 0.8); }
+  /* line 162, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  .medium-editor-toolbar-form-anchor input:-ms-input-placeholder {
+    color: white;
+    color: rgba(255, 255, 255, 0.8); }
+/* line 165, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-editor-toolbar-form-anchor a {
+  color: white; }
+
+/* line 168, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-editor-toolbar-anchor-preview {
+  background: #a95041;
+  color: white; }
+
+/* line 172, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-editor-placeholder:after {
+  color: white; }
+
+@-webkit-keyframes pop-upwards {
+  /* line 176, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  0% {
+    -webkit-transform: scale(0.6);
+    opacity: 0; }
+
+  /* line 179, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  20% {
+    -webkit-transform: scale(0.9);
+    opacity: 0.7; }
+
+  /* line 182, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  40% {
+    -webkit-transform: scale(1.1);
+    opacity: 1; }
+
+  /* line 185, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  70% {
+    -webkit-transform: scale(1);
+    opacity: 1; }
+
+  /* line 188, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1; } }

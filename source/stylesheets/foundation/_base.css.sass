@@ -10,7 +10,10 @@ body
   color: $c-text
   font-family: $bodyFont
   font-size: $baseFontSize
+  height: 100%
   line-height: $baseLineHeight
+  overflow: hidden
+  width: 100%
   -webkit-font-smoothing: antialiased
 
 ::selection
@@ -19,6 +22,11 @@ body
 ::-moz-selection
   background: $c-accent
   color: $c-white
+
+a
+  border-bottom: 1px lighten($c-text,15%) dashed
+  color: $c-text
+  text-decoration: none
 
 p
   margin: 0.1em 0 ($baseLineHeight * 1em) 0

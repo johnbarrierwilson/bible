@@ -1,0 +1,23 @@
+// *************************************
+//
+//   Reader
+//   -> Left side and middle of app
+//
+// *************************************
+
+.reader
+  @extend .borderBox
+  background: darken($c-white,2%)
+  bottom: 0
+  left: 25%
+  margin: auto
+  outline: none
+  overflow: auto
+  padding: 4em 5.5em
+  position: absolute
+  top: 0
+  width: 50%
+  transition: all 450ms ease
+
+.reader.show
+  left: 0

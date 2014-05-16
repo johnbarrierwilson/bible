@@ -1,0 +1,750 @@
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+/* line 22, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
+
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+/* line 32, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+/* line 50, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 64, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/*
+ * Removes default margin.
+ */
+/* line 74, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 86, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+a:focus {
+  outline: thin dotted; }
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+/* line 95, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+/* line 108, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+h1 {
+  font-size: 2em; }
+
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 116, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 125, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+/* line 133, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+dfn {
+  font-style: italic; }
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+/* line 141, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+/* line 154, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+/* line 163, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/*
+ * Sets consistent quote types.
+ */
+/* line 173, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+/* line 181, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+small {
+  font-size: 80%; }
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 190, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 197, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+sup {
+  top: -0.5em; }
+
+/* line 201, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+/* line 213, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+img {
+  border: 0; }
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+/* line 221, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+/* line 233, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* line 245, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 256, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+/* line 270, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 282, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+button,
+input {
+  line-height: normal; }
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 297, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 307, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+/* line 317, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 328, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 341, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+/* line 350, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 360, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+/* line 373, /Users/John/Projects/Bible/source/stylesheets/foundation/_reset.css.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 8, /Users/John/Projects/Bible/source/stylesheets/foundation/_utilities.css.sass */
+.borderBox, .editor, .reader {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 13, /Users/John/Projects/Bible/source/stylesheets/foundation/_utilities.css.sass */
+.group::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+/* line 8, /Users/John/Projects/Bible/source/stylesheets/foundation/_base.css.sass */
+body {
+  background: #fafafa;
+  color: #555555;
+  font-family: "ff-meta-serif-web-pro", Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  height: 100%;
+  line-height: 1.6;
+  overflow: hidden;
+  width: 100%;
+  -webkit-font-smoothing: antialiased; }
+
+/* line 19, /Users/John/Projects/Bible/source/stylesheets/foundation/_base.css.sass */
+::selection {
+  background: #a95041;
+  color: white; }
+
+/* line 22, /Users/John/Projects/Bible/source/stylesheets/foundation/_base.css.sass */
+::-moz-selection {
+  background: #a95041;
+  color: white; }
+
+/* line 26, /Users/John/Projects/Bible/source/stylesheets/foundation/_base.css.sass */
+a {
+  border-bottom: 1px #7b7b7b dashed;
+  color: #555555;
+  text-decoration: none; }
+
+/* line 31, /Users/John/Projects/Bible/source/stylesheets/foundation/_base.css.sass */
+p {
+  margin: 0.1em 0 1.6em 0;
+  padding: 0;
+  text-align: justify; }
+
+/* line 36, /Users/John/Projects/Bible/source/stylesheets/foundation/_base.css.sass */
+sup {
+  color: #a95041;
+  font-weight: bold; }
+
+/* line 40, /Users/John/Projects/Bible/source/stylesheets/foundation/_base.css.sass */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+/* line 44, /Users/John/Projects/Bible/source/stylesheets/foundation/_base.css.sass */
+h1 {
+  border-bottom: 1px #e6e6e6 solid;
+  font-family: "ff-meta-serif-web-pro", Georgia, "Times New Roman", Times, serif;
+  font-size: 2.5em;
+  font-weight: 500;
+  margin: 0 0 1em 0;
+  padding: 0 0 0.5em 0; }
+
+/* line 52, /Users/John/Projects/Bible/source/stylesheets/foundation/_base.css.sass */
+h2 {
+  color: #a95041;
+  font-family: "ff-meta-serif-web-pro", Georgia, "Times New Roman", Times, serif;
+  font-size: 1.3em;
+  font-weight: 500;
+  position: relative; }
+
+/* line 59, /Users/John/Projects/Bible/source/stylesheets/foundation/_base.css.sass */
+h3 {
+  color: #959595;
+  font-family: "ff-meta-serif-web-pro", Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 1.6em; }
+
+/* line 67, /Users/John/Projects/Bible/source/stylesheets/foundation/_base.css.sass */
+article {
+  margin-top: 2em; }
+
+/* line 70, /Users/John/Projects/Bible/source/stylesheets/foundation/_base.css.sass */
+section {
+  margin-bottom: 2em; }
+
+/* line 73, /Users/John/Projects/Bible/source/stylesheets/foundation/_base.css.sass */
+sup {
+  font-size: 0.6em;
+  margin-right: 0.2em;
+  top: -0.5em; }
+
+/* line 78, /Users/John/Projects/Bible/source/stylesheets/foundation/_base.css.sass */
+blockquote {
+  border-left: 2px #d9d9d9 solid;
+  font-style: italic;
+  margin: 0 0 2em;
+  padding: 0 2.5em; }
+
+/* line 8, /Users/John/Projects/Bible/source/stylesheets/components/_logo.css.sass */
+.logo {
+  color: #a95041;
+  font-size: 1.25em;
+  font-weight: 700;
+  margin: 2em 0 4em;
+  text-transform: uppercase; }
+  /* line 14, /Users/John/Projects/Bible/source/stylesheets/components/_logo.css.sass */
+  .logo span {
+    border-left: 1px solid #e6e6e1;
+    color: #555555;
+    font-size: 0.75em;
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 1em;
+    padding: 1em 1.2em;
+    text-transform: initial;
+    vertical-align: 0.1em; }
+
+/* line 8, /Users/John/Projects/Bible/source/stylesheets/structures/_editor.css.sass */
+.editor {
+  background: white;
+  bottom: 0;
+  margin: 0 auto;
+  opacity: 0;
+  outline: none;
+  overflow: hidden;
+  padding: 4em 5.5em;
+  position: absolute;
+  transition: all 450ms ease;
+  top: 0;
+  right: -25%;
+  width: 50%; }
+
+/* line 23, /Users/John/Projects/Bible/source/stylesheets/structures/_editor.css.sass */
+.editor.show {
+  opacity: 1;
+  right: 0; }
+
+/* line 27, /Users/John/Projects/Bible/source/stylesheets/structures/_editor.css.sass */
+#close-editor {
+  background: #555555;
+  color: white;
+  cursor: pointer;
+  display: block;
+  height: 2em;
+  left: 1em;
+  line-height: 2.2em;
+  position: absolute;
+  text-align: center;
+  top: 1em;
+  width: 2em; }
+
+/* line 8, /Users/John/Projects/Bible/source/stylesheets/structures/_reader.css.sass */
+.reader {
+  background: #fafafa;
+  bottom: 0;
+  left: 25%;
+  margin: auto;
+  outline: none;
+  overflow: auto;
+  padding: 4em 5.5em;
+  position: absolute;
+  top: 0;
+  width: 50%;
+  transition: all 450ms ease; }
+
+/* line 22, /Users/John/Projects/Bible/source/stylesheets/structures/_reader.css.sass */
+.reader.show {
+  left: 0; }
+
+/* line 1, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  content: " ";
+  font-size: 0; }
+
+/* line 9, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-toolbar-arrow-under:after, .medium-toolbar-arrow-over:before {
+  position: absolute;
+  left: 50%;
+  display: block;
+  margin-left: -8px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  content: ""; }
+
+/* line 19, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-toolbar-arrow-under:after {
+  border-width: 8px 8px 0 8px; }
+
+/* line 23, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-toolbar-arrow-over:before {
+  top: -8px;
+  border-width: 0 8px 8px 8px; }
+
+/* line 28, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-editor-toolbar, .medium-editor-anchor-preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  visibility: hidden;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  /* line 36, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  .medium-editor-toolbar ul, .medium-editor-anchor-preview ul {
+    margin: 0;
+    padding: 0; }
+  /* line 39, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  .medium-editor-toolbar li, .medium-editor-anchor-preview li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    /* line 44, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+    .medium-editor-toolbar li button, .medium-editor-anchor-preview li button {
+      display: block;
+      margin: 0;
+      padding: 15px;
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 1.33;
+      text-decoration: none;
+      box-sizing: border-box; }
+    /* line 53, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+    .medium-editor-toolbar li .medium-editor-action-underline, .medium-editor-anchor-preview li .medium-editor-action-underline {
+      text-decoration: underline; }
+    /* line 55, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+    .medium-editor-toolbar li .medium-editor-action-pre, .medium-editor-anchor-preview li .medium-editor-action-pre {
+      padding: 15px 0;
+      font-weight: 100;
+      font-size: 12px;
+      font-family: "Menlo", monospace; }
+
+/* line 62, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-editor-anchor-preview i {
+  display: inline-block;
+  margin: 5px 5px 5px 10px;
+  text-decoration: underline;
+  font-style: normal;
+  cursor: pointer; }
+
+/* line 69, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-editor-toolbar-active, .medium-editor-anchor-preview-active {
+  visibility: visible;
+  -webkit-animation: pop-upwards 160ms forwards linear;
+  animation: pop-upwards 160ms forwards linear;
+  transition: top 0.075s ease-out, left 0.075s ease-out; }
+
+/* line 75, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-editor-action-bold {
+  font-weight: bolder; }
+
+/* line 78, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-editor-action-italic {
+  font-style: italic; }
+
+/* line 81, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-editor-toolbar-form-anchor {
+  display: none; }
+  /* line 83, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  .medium-editor-toolbar-form-anchor input, .medium-editor-toolbar-form-anchor a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  /* line 85, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  .medium-editor-toolbar-form-anchor input {
+    margin: 0;
+    padding: 6px;
+    width: 316px;
+    border: none;
+    font-size: 14px;
+    box-sizing: border-box; }
+    /* line 92, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+    .medium-editor-toolbar-form-anchor input:focus {
+      outline: 0;
+      border: none;
+      box-shadow: none;
+      -webkit-appearance: none;
+      -moz-appearance: none; }
+  /* line 98, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  .medium-editor-toolbar-form-anchor a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 24px; }
+
+/* line 105, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-editor-placeholder {
+  position: relative; }
+  /* line 107, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  .medium-editor-placeholder:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: attr(data-placeholder);
+    font-style: italic; }
+
+/* line 119, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-toolbar-arrow-under:after {
+  top: 60px;
+  border-color: #a95041 transparent transparent transparent; }
+
+/* line 123, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-toolbar-arrow-over:before {
+  top: -8px;
+  border-color: transparent transparent #a95041 transparent; }
+
+/* line 127, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-editor-toolbar {
+  background-color: #a95041; }
+  /* line 129, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  .medium-editor-toolbar li {
+    padding: 0; }
+    /* line 131, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+    .medium-editor-toolbar li button {
+      min-width: 60px;
+      height: 60px;
+      border: none;
+      border-right: 1px solid #cf8c81;
+      background-color: transparent;
+      color: white;
+      transition: background-color 0.2s ease-in, color 0.2s ease-in; }
+      /* line 139, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+      .medium-editor-toolbar li button:hover {
+        background-color: #5f2d25;
+        color: white; }
+    /* line 142, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+    .medium-editor-toolbar li .medium-editor-button-active {
+      background-color: #3b1c16;
+      color: white; }
+    /* line 145, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+    .medium-editor-toolbar li .medium-editor-button-last {
+      border-right: none; }
+
+/* line 149, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-editor-toolbar-form-anchor input {
+  height: 60px;
+  background: #a95041;
+  color: white; }
+  /* line 153, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  .medium-editor-toolbar-form-anchor input::-webkit-input-placeholder {
+    color: white;
+    color: rgba(255, 255, 255, 0.8); }
+  /* line 156, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  .medium-editor-toolbar-form-anchor input:-moz-placeholder {
+    color: white;
+    color: rgba(255, 255, 255, 0.8); }
+  /* line 159, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  .medium-editor-toolbar-form-anchor input::-moz-placeholder {
+    color: white;
+    color: rgba(255, 255, 255, 0.8); }
+  /* line 162, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  .medium-editor-toolbar-form-anchor input:-ms-input-placeholder {
+    color: white;
+    color: rgba(255, 255, 255, 0.8); }
+/* line 165, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-editor-toolbar-form-anchor a {
+  color: white; }
+
+/* line 168, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-editor-toolbar-anchor-preview {
+  background: #a95041;
+  color: white; }
+
+/* line 172, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+.medium-editor-placeholder:after {
+  color: white; }
+
+@-webkit-keyframes pop-upwards {
+  /* line 176, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  0% {
+    -webkit-transform: scale(0.6);
+    opacity: 0; }
+
+  /* line 179, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  20% {
+    -webkit-transform: scale(0.9);
+    opacity: 0.7; }
+
+  /* line 182, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  40% {
+    -webkit-transform: scale(1.1);
+    opacity: 1; }
+
+  /* line 185, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  70% {
+    -webkit-transform: scale(1);
+    opacity: 1; }
+
+  /* line 188, /Users/John/Projects/Bible/source/stylesheets/vendor/tools.css.sass */
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1; } }

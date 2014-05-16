@@ -1,0 +1,38 @@
+// *************************************
+//
+//   Editor
+//   -> Right side of app
+//
+// *************************************
+
+.editor
+  @extend .borderBox
+  background: $c-white
+  bottom: 0
+  margin: 0 auto
+  opacity: 0
+  outline: none
+  overflow: hidden
+  padding: 4em 5.5em
+  position: absolute
+  transition: all 450ms ease
+  top: 0
+  right: -25%
+  width: 50%
+
+.editor.show
+  opacity: 1
+  right: 0
+
+#close-editor
+  background: $c-text
+  color: $c-white
+  cursor: pointer
+  display: block
+  height: 2em
+  left: 1em
+  line-height: 2.2em
+  position: absolute
+  text-align: center
+  top: 1em
+  width: 2em

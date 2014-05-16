@@ -12,3 +12,4 @@ var editor = new MediumEditor('.editor', {
 $('a, #close-editor').click(function() {
   $('.reader, .editor').toggleClass('show')
 })
+;

@@ -32,7 +32,7 @@
   z-index: 2000
   visibility: hidden
   font-size: 16px
-  font-family: $bodyFont
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
   ul
     margin: 0
     padding: 0
@@ -81,7 +81,7 @@
 .medium-editor-toolbar-form-anchor
   display: none
   input, a
-    font-family: $bodyFont
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
   input
     margin: 0
     padding: 6px
@@ -174,17 +174,17 @@ $medium_editor_link_color:    #fff
 
 @-webkit-keyframes pop-upwards
   0%
-    +transform(scale(0.6))
-    +opacity(0)
+    -webkit-transform: scale(0.6)
+    opacity: 0
   20%
-    +transform(scale(0.9))
-    +opacity(0.7)
+    -webkit-transform: scale(0.9)
+    opacity: 0.7
   40%
-    +transform(scale(1.05))
-    +opacity(1)
+    -webkit-transform: scale(1.1)
+    opacity: 1
   70%
-    +transform(scale(1))
-    +opacity(1)
+    -webkit-transform: scale(1)
+    opacity: 1
   100%
-    +transform(scale(1))
-    +opacity(1)
+    -webkit-transform: scale(1)
+    opacity: 1
